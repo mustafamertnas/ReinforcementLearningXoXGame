@@ -1,8 +1,7 @@
-# Winnn - Yapay Zeka Destekli XOX Oyunu
 
-Winnn, Q-Learning (Pekiştirmeli Öğrenme) algoritması kullanarak kendi kendine oynamayı öğrenen gelişmiş bir Tic-Tac-Toe (XOX) oyunudur.
+Q-Learning  algoritması kullanarak kendi kendine oynamayı öğrenen gelişmiş bir Tic-Tac-Toe (XOX) oyunudur.
 
-## 🌟 Özellikler
+##  Özellikler
 
 *   **İki Oyun Modu**:
     *   **Klasik Mod**: Standart 3x3 Tic-Tac-Toe. 3 taşı yan yana getiren kazanır.
@@ -15,16 +14,7 @@ Winnn, Q-Learning (Pekiştirmeli Öğrenme) algoritması kullanarak kendi kendin
     *   Jetpack Compose ile geliştirilmiş şık ve akıcı UI.
     *   Canlı eğitim istatistikleri (Epsilon, Bölüm sayısı).
 
-## 🚀 Nasıl Başlanır?
-
-1.  Uygulamayı açın.
-2.  Menüden **Klasik** veya **XOX** modunu seçin.
-3.  **"Eğit (50k)"** butonuna basın.
-    *   AI saniyeler içinde binlerce oyun oynayarak strateji geliştirecektir.
-    *   Eğitim sırasında ilerleme çubuğunu ve metrikleri izleyebilirsiniz.
-4.  Eğitim bittikten sonra **"Sıfırla"** diyerek yapay zekaya karşı oynayın!
-
-## 🧠 Teknik Detaylar
+## Teknik Detaylar
 
 ### Q-Learning Algoritması
 Yapay zeka, `QLearningAgent` sınıfı içerisinde yönetilir.
@@ -39,13 +29,10 @@ Yapay zeka, `QLearningAgent` sınıfı içerisinde yönetilir.
 
 ### Mimari (MVVM)
 Proje, Android'in önerdiği **Model-View-ViewModel** mimarisini takip eder.
-*   **Model**: `GameState.kt` (Oyun verisi), `QLearningAgent.kt` (AI Mantığı).
-*   **View**: `MainActivity.kt` (Compose UI).
-*   **ViewModel**: `GameViewModel.kt` (UI ve İş mantığı arasındaki köprü).
+*   **Model**: GameState.kt, QLearningAgent.kt.
+*   **View**: MainActivity.kt.
+*   **ViewModel**: GameViewModel.kt.
 
-## 🛠 Geliştirici Notları
-*   **Symmetry Breaking**: AI'nın konumsal hatalarını engellemek için simetri optimizasyonu kapatılmıştır. Her tahta durumu benzersiz olarak işlenir.
-*   **Reward Shaping**: XOX modu için "Reward Hacking" riskini önlemek adına ara ödüller en aza indirilmiştir.
 
----
+
 **Geliştirici**: Mustafa Mert Nas
